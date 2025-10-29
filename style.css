@@ -1,0 +1,14 @@
+body {
+    display:flex;
+}
+ .src, #banner {
+    position: absolute;
+ }
+
+.src {
+    bottom: 10px;
+}
+
+#banner {
+    top:200px;
+}
