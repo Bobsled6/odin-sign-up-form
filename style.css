@@ -49,3 +49,18 @@ body {
     color: white;
 }
 
+#content {
+   display: flex;
+   flex-direction: column;
+}
+
+#top {
+    min-height: 35%;
+    margin: 150px 550px 0px 40px ;
+}
+
+.top_text {
+    font-size: 25px;
+    font-weight: bold;
+}
+
