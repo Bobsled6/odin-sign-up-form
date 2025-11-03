@@ -118,7 +118,7 @@ input:focus {
     border-color: blue;
 }
 
-input[type=password]:invalid {
+input#sign-up-form[type=password]:invalid {
     border-color: red; 
 }  
 
@@ -169,6 +169,39 @@ button {
 }
 
 a#login-link, a#login-link:visited, a#login-link:active, a#login-link:hover {
+    color: #596D48;
+    text-decoration: none;
+}
+
+#sign-in {
+    font-weight: bold;
+}
+
+#login-right {
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 300px;
+    width: calc(100vw - 644.312px);
+    background-color: #e7e7e7;
+
+}
+
+#create-account {
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
+    font-weight: bold;
+}
+
+#login-button {
+    height: 35px;
+    font: 18px bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+a#sign-up-link, a#sign-up-link:visited, a#sign-up-link:active, a#sign-up-link:hover {
     color: #596D48;
     text-decoration: none;
 }
