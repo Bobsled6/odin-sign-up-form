@@ -56,7 +56,7 @@ body {
     width: 95px;
 }
 
-#source, a, a:visited, a:active, a:hover {
+#source, a#source-link, a#source-link:visited, a#source-link:active, a#source-link:hover {
     color: white;
 }
 
@@ -66,8 +66,7 @@ body {
 }
 
 #top {
-    min-height: 37.5%;
-    max-height: 37.5%;
+    height: 35%;
     background-color: rgb(241, 241, 241);
     padding: 0;
     align-content:flex-end;
@@ -83,6 +82,10 @@ body {
 
 #hook {
     padding-bottom: 50px;
+}
+
+#middle {
+    height: 30%;
 }
 
 form { 
@@ -130,4 +133,42 @@ h2 {
     padding-left: 45px;
     font-weight: 600;
     color: rgb(29, 46, 59);
+}
+
+#bottom {
+    height: 35%;
+}
+
+
+#shadow {
+background: linear-gradient(to top, #fbfefb 0%, #ccc5c2 100% );
+height: 10px;
+width: calc(100vw - 644.312px);
+}
+
+button {
+    margin-top: 15px;
+    width: 250px;
+    height: 50px;
+    border-radius: 7px;
+    color: white;
+    background-color: #596D48;
+    font: 22px bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.bottom-text {
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+
+#login {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+a#login-link, a#login-link:visited, a#login-link:active, a#login-link:hover {
+    color: #596D48;
+    text-decoration: none;
 }
