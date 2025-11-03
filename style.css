@@ -133,7 +133,7 @@ input:focus {
     border-color: blue;
 }
 
-input#sign-up-form[type=password]:invalid {
+input.password-pair[type=password]:invalid {
     border-color: red; 
 }  
 
