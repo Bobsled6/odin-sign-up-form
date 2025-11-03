@@ -15,27 +15,39 @@
     font-display: swap;
 }
 
+html,body {
+   margin: 0;
+   padding: 0;
+}
 
 body {
     display: flex;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y:hidden ;
 }
 
 #image {
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
     position: relative;
-    height: 100vh;
+    max-height: 100vh;
+    border: 0px;
+    background: url(background-image-leaf.avif);
+    min-width: 33%;
+    overflow-x: hidden;
 }
 
+
  #source, #banner {
-    position: absolute;
+    position: relative;
  }
 
 #source {
-    bottom: 10px;
+    align-self: center;
 }
 
 #banner {
@@ -46,23 +58,25 @@ body {
     background-color: rgba(0,0,0,.4);
     height: 150px;
     width: 100%;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #odin_img {
-    height: 125px;
-    width: 95px;
+    max-height: 125px;
+    max-width: 95px;
 }
 
 #source, a#source-link, a#source-link:visited, a#source-link:active, a#source-link:hover {
     color: white;
 }
 
-#content {
-   display: flex;
-   flex-direction: column;
+#source {
+    text-wrap: nowrap;
 }
 
 #top {
@@ -70,7 +84,7 @@ body {
     background-color: rgb(241, 241, 241);
     padding: 0;
     align-content:flex-end;
-    width: calc(100vw - 644.312px);
+    width: 100vw;
 }
 
 .top_text {
@@ -85,7 +99,8 @@ body {
 }
 
 #middle {
-    height: 30%;
+    min-height: 30%;
+    padding-bottom: 5px;
 }
 
 form { 
@@ -136,14 +151,13 @@ h2 {
 }
 
 #bottom {
-    height: 35%;
+    min-height: 35%;
 }
 
 
 #shadow {
 background: linear-gradient(to top, #fbfefb 0%, #ccc5c2 100% );
 height: 10px;
-width: calc(100vw - 644.312px);
 }
 
 button {
@@ -183,8 +197,8 @@ a#login-link, a#login-link:visited, a#login-link:active, a#login-link:hover {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 300px;
-    width: calc(100vw - 644.312px);
     background-color: #e7e7e7;
+    width: 100vw;
 
 }
 
